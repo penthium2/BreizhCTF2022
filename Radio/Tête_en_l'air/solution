@@ -1,0 +1,42 @@
+Les fréquences 1030 et 1090 MHz sont en outre utilisées pour les radars secondaires (c’est-à-dire ceux interrogeant un transpondeur dans l’avion, alors que les radars primaires utilisent simplement le signal radar réfléchi par l’avion) afin de localiser les avions et fournir cette information au contrôle aérien. C’est aujourd’hui la source essentielle d’information pour le contrôle aérien. Certains modes à ces fréquences permettent l’anticollision entre avions (TCAS) et la transmission de la localisation d’un avion sans interrogation (ADS-B). Suites aux décisions prises lors de la dernière Conférence Mondiale des Radiocommunications ( CMR -15), les satellites vont désormais pouvoir écouter à la fréquence de 1090 MHz les messages ADS-B émis par les aéronefs afin d’assurer un suivi global des vols et éviter que l’on puisse perdre trace d’un vol, comme cela s’était produit avec celui de la Malaysian Airlines MH370.
+https://github.com/wiedehopf/adsb-scripts/wiki/Automatic-installation-for-readsb
+nc challenges.ctf.bzh 28001 | dump1090-mutability --ifile -
+
+BZHCTF{INDICATIF:VILLE_SURVOLEE:MODEL_AERONEF}
+
+
+*8ddddbfc580b8779739f7a7fe8ee;
+CRC: 000000
+RSSI: -7.7 dBFS
+Score: 1800
+Time: 3179850.75us
+DF:17 AA:DDDBFC CA:5 ME:580B8779739F7A
+ Extended Squitter Airborne position (barometric altitude) (11)
+  ICAO Address:  DDDBFC (Mode S / ADS-B)
+  Air/Ground:    airborne
+  Altitude:      1200 ft barometric
+  CPR type:      Airborne
+  CPR odd flag:  odd
+  CPR NUCp/NIC:  7
+  CPR latitude:  48.01179 (113849)
+  CPR longitude: -1.74021 (106362)
+  CPR decoding:  global
+
+
+
+https://www.flightradar24.com/data/aircraft/f-chap
+AIRCRAFT
+ASH-25
+
+
+
+
+indicatif : DDDBFC
+
+
+ville : 35170 Bruz, France
+
+
+
+BZHCTF{P0UP4RD:BRUZ:ASH-25}
+
